@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/csm/clickMox/catkin_ws/install/setup.sh
