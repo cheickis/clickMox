@@ -1,0 +1,12 @@
+<package>
+  <description brief="pratical">
+
+     pratical
+
+  </description>
+  <author>csm</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/pratical</url>
+
+</package>

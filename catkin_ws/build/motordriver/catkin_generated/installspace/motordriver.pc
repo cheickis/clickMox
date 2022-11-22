@@ -1,0 +1,8 @@
+prefix=/home/csm/clickMox/catkin_ws/install
+
+Name: motordriver
+Description: Description of motordriver
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

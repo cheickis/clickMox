@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libroboclaw.so -o /home/csm/clickMox/catkin_ws/devel/lib/libroboclaw.so CMakeFiles/roboclaw.dir/src/roboclaw.c.o 
