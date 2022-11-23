@@ -63,24 +63,25 @@ int drive(int leftSp, int rightSp){
 }
 
 int left(int16_t sp){
-   int leftSp = getRobotSpeed( -sp);
-   int rightSp = getRobotSpeed(7);
 
- 
-  int result = roboclaw_duty_m1m2(rc, address, -leftSp, -rightSp) ;
+
+ int rightSp = getRobotSpeed( sp);
+  int leftSp = getRobotSpeed(7);
+  int result = roboclaw_duty_m1m2(rc, address, leftSp, rightSp) ;
    if( result!= ROBOCLAW_OK )
    {
      ROS_ERROR( "problem communicating with roboclaw, terminating\n");
 			return -1;			
    } 
   return ROBOCLAW_OK;
-
 }
 
 int right(int sp){
-  int rightSp = getRobotSpeed( sp);
-  int leftSp = getRobotSpeed(7);
-  int result = roboclaw_duty_m1m2(rc, address, leftSp, -rightSp) ;
+    int leftSp = getRobotSpeed( -sp);
+   int rightSp = getRobotSpeed(7);
+
+ 
+  int result = roboclaw_duty_m1m2(rc, address, -leftSp, -rightSp) ;
    if( result!= ROBOCLAW_OK )
    {
      ROS_ERROR( "problem communicating with roboclaw, terminating\n");
